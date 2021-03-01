@@ -1,0 +1,18 @@
+<!--
+
+  In this example I learnt that some browsers don't support css variables so a fallback value for them is defined by separately defining a value for that element.
+
+-->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
